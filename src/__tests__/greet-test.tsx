@@ -1,10 +1,10 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
-import Greet from './Greet';
+import Greet from './../Greet';
 
 describe.only('Greet', ()=>{
 
-  test('Greet as hello', () => {
+  it('Greet as hello', () => {
     render(<Greet />);
     const linkElement = screen.getByText(/hello/i);
     expect(linkElement).toBeInTheDocument();
